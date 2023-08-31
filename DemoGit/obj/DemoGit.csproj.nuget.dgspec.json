@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\BTH\\DemoGit\\DemoGit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj": {
+    "C:\\Users\\Admin\\Desktop\\BTH\\DemoGit\\DemoGit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj",
-        "projectName": "NewApp",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\BTH\\DemoGit\\DemoGit.csproj",
+        "projectName": "DemoGit",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\BTH\\DemoGit\\DemoGit.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\BTH\\DemoGit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -49,6 +49,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
