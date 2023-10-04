@@ -3,17 +3,27 @@
  public class Students  {
         public string Name {get;set;}
         public string Address {get; set;}
-        public string StudentID {get; set;}
-        public Students ()
+        public int StudentID {get; set;}
+        public void NhapThongTin()
         {
-            Name = "ho ten mac dinh";
-            Address ="Ha noi";
-            StudentID ="1921050280";
+            System.Console.WriteLine("ho va ten");
+            Name = Console.ReadLine();
+            System.Console.WriteLine("dia chi");
+            Address = Console.ReadLine();
+            System.Console.Write("ID = ");
+            try{
+                StudentID = Convert.ToInt16(Console.ReadLine());
+            } catch(Exception e)
+            {
+                StudentID =0;
+            }
+            
         }
-        public int GetYearOfBirth(int age)
-    {
-        int yearOfBirth = 2023-age;
-        return yearOfBirth;
-    }   
+
+        public void HienThi()
+         {
+             System.Console.WriteLine("{0}-{1}-{2}", Name, Address, StudentID);
+         }
  }
- } 
+
+ }    

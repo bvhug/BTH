@@ -3,9 +3,6 @@ namespace NewApp.Models
  public class Fruit {
         public string FruitName {get;set;}
         public int weight {get; set;}
-       
-
-        // phuong thuc co gia tri tra ve-Fruit
        public void EnterData()
        {
         System.Console.Write("Fruit name = ");
@@ -25,6 +22,3 @@ namespace NewApp.Models
     }
 }
  }
-
-    
-        
