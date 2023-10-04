@@ -11,9 +11,6 @@ namespace NewApp.Models
         System.Console.Write("Fruit name = ");
         FruitName = Console.ReadLine();
         System.Console.Write("weight = ");
-       
-        // tran thi mai anh-2021050093
-        // try...catch -Fruit
         try{
             weight = Convert.ToInt16(Console.ReadLine());
         } catch(Exception e)
