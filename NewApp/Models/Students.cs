@@ -6,9 +6,9 @@
         public int StudentID {get; set;}
         public void NhapThongTin()
         {
-            System.Console.WriteLine("ho va ten");
+            System.Console.WriteLine("Ho va Ten");
             Name = Console.ReadLine();
-            System.Console.WriteLine("dia chi");
+            System.Console.WriteLine("Dia Chi");
             Address = Console.ReadLine();
             System.Console.Write("ID = ");
             try{
