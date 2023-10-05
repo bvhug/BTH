@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj": {
+    "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj",
         "projectName": "NewApp",
-        "projectPath": "c:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\NewApp.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\Desktop\\BTH\\NewApp\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\BTH\\NewApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
