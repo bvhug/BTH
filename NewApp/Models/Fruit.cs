@@ -3,11 +3,15 @@ namespace NewApp.Models
  public class Fruit {
         public string FruitName {get;set;}
         public int weight {get; set;}
+       
+
+        
        public void EnterData()
        {
-        System.Console.Write("Fruit name = ");
+        System.Console.Write("Fruitname = ");
         FruitName = Console.ReadLine();
-        System.Console.Write("weight = ");
+        System.Console.Write("weight = ");    
+        //BuiVietHung-1921050280
         try{
             weight = Convert.ToInt16(Console.ReadLine());
         } catch(Exception e)
@@ -16,11 +20,9 @@ namespace NewApp.Models
         }
 
     }
-    public void Display()
+    public void DisplayData()
     {
         System.Console.WriteLine("{0} + {1} " , FruitName, weight);
     }
 }
  }
-//1921050280
-//Bui Viet Hung

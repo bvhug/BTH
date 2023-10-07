@@ -7,11 +7,12 @@ namespace NewApp.Models
         public int Age  {get; set;}
     public void EnterData()
     {
-        System.Console.Write("Full name = ");
+        System.Console.Write("fullname = ");
         FullName = Console.ReadLine();
         System.Console.Write("Address = ");
         Address = Console.ReadLine();
         System.Console.Write("Age= ");
+        //BuiVietHung-1921050280
         try{
             Age = Convert.ToInt16(Console.ReadLine());
         } catch(Exception e)
@@ -27,5 +28,3 @@ namespace NewApp.Models
     }
     }
 }
-//1921050280
-//Bui Viet Hung

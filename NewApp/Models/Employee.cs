@@ -4,6 +4,7 @@ namespace NewApp.Models
         public string FullName {get;set;}
         public string Address {get; set;}
         public int EmployeeID {get; set;}
+        // BuiVietHung1921050280
         public void EnterData(){
                 System.Console.Write("Full name = ");
                 FullName = Console.ReadLine();
@@ -11,6 +12,7 @@ namespace NewApp.Models
                 Address = Console.ReadLine();
                 
                 System.Console.WriteLine("EmployeeID");
+                
                 try{
                     EmployeeID = Convert.ToInt16(Console.ReadLine());
                 } catch(Exception e)
@@ -25,5 +27,3 @@ namespace NewApp.Models
  }
 
  }    
-         //1921050280
-         //Bui Viet Hung

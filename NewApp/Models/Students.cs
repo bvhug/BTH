@@ -1,31 +1,31 @@
- namespace NewApp.Models
+namespace NewApp.Models
  {
  public class Students  {
-        public string Name {get;set;}
-        public string Address {get; set;}
-        public int StudentID {get; set;}
-        public void NhapThongTin()
+        public string FullName { get; set; }
+        public string Address { get; set; }
+        public int Age { get; set; }
+ 
+
+    public void EnterData()
+    {
+        System.Console.Write("fullname = ");
+        FullName = Console.ReadLine();
+        System.Console.Write("Address = ");
+        Address = Console.ReadLine();
+        System.Console.Write("Age= ");
+        //BuiVietHung-1921050280
+        try{
+            Age = Convert.ToInt16(Console.ReadLine());
+        } catch(Exception e)
         {
-            System.Console.WriteLine("Ho va Ten");
-            Name = Console.ReadLine();
-            System.Console.WriteLine("Dia Chi");
-            Address = Console.ReadLine();
-            System.Console.Write("ID = ");
-            try{
-                StudentID = Convert.ToInt16(Console.ReadLine());
-            } catch(Exception e)
-            {
-                StudentID =0;
-            }
-            
+            Age = 0;
         }
 
-        public void HienThi()
-         {
-             System.Console.WriteLine("{0}-{1}-{2}", Name, Address, StudentID);
-         }
- }
+    }
 
- }    
- //1921050280
- //Bui Viet Hung
+    public void Display()
+    {
+        System.Console.WriteLine("{0} + {1} + {2}" , FullName, Address, Age);
+    }
+    }
+ }
