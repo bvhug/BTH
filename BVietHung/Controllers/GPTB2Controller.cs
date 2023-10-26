@@ -32,6 +32,6 @@ public class PTBacHaiController : Controller
             ViewData["Result"] = "Phuong trinh co 2 nghiem: x1 = " + model.x1 + ", x2 = " + model.x2;
         }
 
-        return View("IndexPTBacHai", model);
+        return View("IndexGPTB2", model);
     }
 }
