@@ -1,6 +1,6 @@
 using System.Diagnostics.Contracts;
 using System.Security.Cryptography.X509Certificates;
-using BVietHungMVC.Controllers;
+using BVietHung.Models;
 using Microsoft.AspNetCore.Mvc;
 //BuiVietHung-1921050280
 public class PTBacHaiController : Controller
