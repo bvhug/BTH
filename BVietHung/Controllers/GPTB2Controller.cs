@@ -3,7 +3,8 @@ using System.Security.Cryptography.X509Certificates;
 using BVietHung.Models;
 using Microsoft.AspNetCore.Mvc;
 //BuiVietHung-1921050280
-public class PTBacHaiController : Controller
+namespace BVietHung.Controllers
+public class GPTB2Controller : Controller
 {
     public IActionResult IndexGPTB2()
     {
