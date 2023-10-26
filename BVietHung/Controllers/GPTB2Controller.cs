@@ -1,18 +1,18 @@
 using System.Diagnostics.Contracts;
 using System.Security.Cryptography.X509Certificates;
-using DemoMVC.Controllers;
+using BVietHungMVC.Controllers;
 using Microsoft.AspNetCore.Mvc;
 //BuiVietHung-1921050280
 public class PTBacHaiController : Controller
 {
-    public IActionResult IndexPTBacHai()
+    public IActionResult IndexGPTB2()
     {
         return View();
     }
     [HttpPost]
 
 
-    public IActionResult IndexPTBacHai(GiaiPTBac2 model)
+    public IActionResult IndexGPTB2(GiaiPTBac2 model)
     {
         double delta = model.b * model.b - 4 * model.a * model.c;
 
