@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
+using BVietHung.Models;
 namespace BVietHung.Controllers;
 public class PersonController : Controller 
 {
