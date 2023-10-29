@@ -8,11 +8,11 @@ public class PersonController : Controller
         return View();
     }
     [HttpPost]
-    public IActionResult Index(string PersonID, string FullName)
-    {
-        string strResult = "Hello" + PersonID + FullName;
-        ViewBag.thongbao = strResult ;
-        return View();
-    }
+     public IActionResult Index(Person prs)
+        {
+            string str = prs.PersonID +"_" + prs.FullName;
+            ViewBag.thongBao = str;
+            return View();
+        }
     //BuiVietHung -1921050280
 }

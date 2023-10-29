@@ -1,22 +1,20 @@
-using System.Diagnostics.Contracts;
-using System.Security.Cryptography.X509Certificates;
-using BVietHung.Models;
 using Microsoft.AspNetCore.Mvc;
-public class EmployeeController : Controller
-{
-    public IActionResult IndexEmployee()
-    {
-        return View();
-    }
-    [HttpPost]
 
-    public IActionResult IndexEmployee(string HoTen, decimal LuongCoBan, decimal HeSoLuong, decimal PhuCap)
+namespace BVietHung.Controllers
+{
+    public class EmployeeController : Controller 
     {
-        decimal luong = LuongCoBan * HeSoLuong + PhuCap;
-        string tl = HoTen + "-" + luong;
-        ViewBag.thongbao = tl;
-        return View();
-    }
-  
-//BuiVietHung-1921050280
+      public IActionResult Index()
+            {
+                return View();
+            }
+            //BuiVietHung-1921050280
+             [HttpPost]
+         public IActionResult Index(Employee emp)
+         {
+             string str = emp.FullName + "_" + emp.EmployeeID + "_" + emp.SoDienThoai +"_"+ emp.Address; 
+                ViewBag.KetQua = str;
+                return View();
+         }
+     }
 }
