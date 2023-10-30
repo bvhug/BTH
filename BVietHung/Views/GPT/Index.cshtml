@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="vi">
-
-<head>
-    <meta charset="utf-8">
-</head>
-
-<body>
-    <h2>Nhap he so giai phuong trinh bac 2:</h2>
-    @model GPTB2
-    <form asp-action="IndexGPTB2">
-        He so a: <input type="text" name="a" placeholder="a" /><br>
-        He so b: <input type="text" name="b" placeholder="b" /><br>
-        He so c: <input type="text" name="c" placeholder="c" /><br>
-        <input type="submit" name="Tinh" value="Tinh" />
-    </form>
-    @* <h1>@ViewBag.thongbao</h1> *@
-    @if (ViewData["Result"] != null)
-    {
-        <div>
-            <p>@ViewData["Result"]</p>
-        </div>
-    }
-</body>
-
-</html>
+<form asp-action="Index">
+    <label>Phương Trình Bậc 2 =  ax^2 + bx + c = 0</label><br>
+    <label>a = </label><br>
+    <input type="text" name="a" required placeholder="Enter a"><br>
+    <label>b = </label><br>
+    <input type="text" name="b" required placeholder="Enter b"><br>
+    <label>c = </label><br>
+    <input type="text" name="c" required placeholder="Enter c"><br>
+    <br>
+    <input type="submit" value="Save">
+    <br>
+</form>
+<p>@ViewBag.ThongBao</p>
