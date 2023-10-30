@@ -1,40 +1,37 @@
-using System.Diagnostics.Contracts;
-using System.Security.Cryptography.X509Certificates;
-using BVietHung.Models;
 using Microsoft.AspNetCore.Mvc;
-//BuiVietHung-1921050280
+using BVietHung.Models;
 namespace BVietHung.Controllers
+
 {
-public class GPTB2Controller : Controller
-{
-    public IActionResult Index()
+    public class GPTB2Controller : Controller
     {
-        return View();
+         public IActionResult Index()
+        {
+            return View();
+        }
+         [HttpPost]
+
+        public IActionResult Index(double a, double b, double c)
+        {
+            
+            double denta = (b*b - 4*a*c);
+
+            if ( denta < 0)
+            {
+                ViewBag.ThongBao = "Phuong Trinh Vo Nghiem";
+            }else if( denta == 0 )
+            {
+                double nghiemkep = -b / 2*a;
+                ViewBag.ThongBao = $"Phuong Trinh co nghiem kep = {nghiemkep}";
+            }else
+            {
+                double nghiem1 = (-b + Math.Sqrt(denta)) / 2*a;
+                double nghiem2 = (-b - Math.Sqrt(denta)) / 2*a;
+
+                ViewBag.ThongBao = $"Phuong trinh co 2 nghiem: Nghiem 1 = {nghiem1} | Nghiem 2 = {nghiem2}";
+            }
+            return View();
+        }
     }
-    [HttpPost]
-
-
-    public IActionResult IndexGPTB2(GPTB2 model)
-    {
-        double delta = model.b * model.b - 4 * model.a * model.c;
-
-        if (delta < 0)
-        {
-            ViewData["Result"] = "Phuong trinh vo nghiem";
-        }
-        else if (delta == 0)
-        {
-            model.x1 = -model.b / (2 * model.a);
-            ViewData["Result"] = "Phuong trinh co nghiem kep: " + model.x1;
-        }
-        else
-        {
-            model.x1 = (-model.b + Math.Sqrt(delta)) / (2 * model.a);
-            model.x2 = (-model.b - Math.Sqrt(delta)) / (2 * model.a);
-            ViewData["Result"] = "Phuong trinh co 2 nghiem: x1 = " + model.x1 + ", x2 = " + model.x2;
-        }
-
-        return View("IndexGPTB2", model);
-    }
-}
+    //BuiVietHung-1921050280
 }
