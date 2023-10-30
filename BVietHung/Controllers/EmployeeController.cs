@@ -1,5 +1,5 @@
-using Microsoft.AspNetCore.Mvc;
-using BVietHung.Models;
+using Microsoft.AspNetCore.Mvc
+using BVietHung.Models
 namespace BVietHung.Controllers 
 {
     public class EmployeeController : Controller 
@@ -7,8 +7,6 @@ namespace BVietHung.Controllers
       public IActionResult Index()
             {
                 return View();
-            }
-            //BuiVietHung-1921050280
              [HttpPost]
          public IActionResult Index(Employee emp)
          {
@@ -17,4 +15,5 @@ namespace BVietHung.Controllers
                 return View();
          }
      }
+     //BuiVietHung-1921050280
 }
