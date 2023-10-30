@@ -1,5 +1,5 @@
-using Microsoft.AspNetCore.Mvc
-using BVietHung.Models
+using Microsoft.AspNetCore.Mvc;
+using BVietHung.Models;
 namespace BVietHung.Controllers 
 {
     public class EmployeeController : Controller 
@@ -7,8 +7,9 @@ namespace BVietHung.Controllers
       public IActionResult Index()
             {
                 return View();
+            }
              [HttpPost]
-         public IActionResult Index(Employee emp)
+            public IActionResult Index(Employee emp)
          {
              string str = emp.FullName + "_" + emp.EmployeeID + "_" + emp.SoDienThoai +"_"+ emp.Address; 
                 ViewBag.KetQua = str;
