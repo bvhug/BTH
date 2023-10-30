@@ -4,16 +4,17 @@ using BVietHung.Models;
 using Microsoft.AspNetCore.Mvc;
 //BuiVietHung-1921050280
 namespace BVietHung.Controllers
+{
 public class GPTB2Controller : Controller
 {
-    public IActionResult IndexGPTB2()
+    public IActionResult Index()
     {
         return View();
     }
     [HttpPost]
 
 
-    public IActionResult IndexGPTB2(GiaiPTBac2 model)
+    public IActionResult IndexGPTB2(GPTB2 model)
     {
         double delta = model.b * model.b - 4 * model.a * model.c;
 
@@ -35,4 +36,5 @@ public class GPTB2Controller : Controller
 
         return View("IndexGPTB2", model);
     }
+}
 }

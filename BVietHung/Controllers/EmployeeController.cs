@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using BVietHung.Models;
-namespace BVietHung.Controllers
+namespace BVietHung.Controllers 
 {
     public class EmployeeController : Controller 
     {
