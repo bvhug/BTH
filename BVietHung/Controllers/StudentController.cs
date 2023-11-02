@@ -1,3 +1,4 @@
+using BVietHung.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BVietHung.Controllers
