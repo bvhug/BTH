@@ -20,12 +20,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVtb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/BTH/BVietHung/Views/Employee/IndexEmployee.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXhFbXBsb3llZS5jc2h0bWw=
+[C:/Users/Admin/Desktop/BTH/BVietHung/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/BTH/BVietHung/Views/GPT/IndexGPTB2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR1BUXEluZGV4R1BUQjIuY3NodG1s
+[C:/Users/Admin/Desktop/BTH/BVietHung/Views/GPT/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR1BUXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Desktop/BTH/BVietHung/Views/Home/Demo.cshtml]
@@ -38,6 +38,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Desktop/BTH/BVietHung/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/BTH/BVietHung/Views/Person/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/BTH/BVietHung/Views/Person/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/BTH/BVietHung/Views/Person/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/BTH/BVietHung/Views/Person/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/BTH/BVietHung/Views/PTB1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUFRCMVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Desktop/BTH/BVietHung/Views/Shared/Error.cshtml]
