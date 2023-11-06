@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BVietHung.Controllers
 {
-    public class StudentController : Controller
+    public class StudentController : Controller 
     {
           public IActionResult Index()
             {
