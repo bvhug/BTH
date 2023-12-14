@@ -53,10 +53,6 @@ namespace BVietHung.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("SoDienThoai")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.ToTable("Person");
 
                     b.HasDiscriminator().HasValue("Employee");

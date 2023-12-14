@@ -4,6 +4,5 @@ namespace BVietHung.Models
     {
          public string EmployeeID  { get; set; }
          public int Age  { get; set; }
-         public string SoDienThoai { get; set; }
     }
 }

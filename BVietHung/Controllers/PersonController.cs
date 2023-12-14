@@ -3,11 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BVietHung.Data;
 using BVietHung.Models;
+using System.Data;
+using BVietHung.Models.Process;
 namespace BVietHung.Controllers
 {
      public class PersonController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private ExcelProcess _excelProcess = new ExcelProcess();
+        private int i;
 
         public PersonController(ApplicationDbContext context)
         {
@@ -149,10 +153,56 @@ namespace BVietHung.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Upload()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Upload(IFormFile file)
+        {
+            if (file!=null)
+                {
+                    string fileExtension = Path.GetExtension(file.FileName);
+                    if (fileExtension != ".xls" && fileExtension != ".xlsx")
+                    {
+                        ModelState.AddModelError("", "Please choose excel file to upload!");
+                    }
+                    else
+                    {
+                        //rename file when upload to server
+                        var fileName = DateTime.Now.ToShortTimeString() + fileExtension;
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", fileName);
+                        var fileLocation = new FileInfo(filePath).ToString();
+                        using (var stream = new FileStream(filePath,FileMode.Create))
+                        {
+                            //save file to sever
+                            await file.CopyToAsync(stream);
+                            var dt = _excelProcess.ExcelToDataTable(fileLocation);
+                            //using for loop to read data from dt
+                            for (int i = 0; i <dt.Rows.Count; i ++);
+                            {
+                                //Create new Person Obj
+                                var ps = new Person();
+                                //set value to  attributes
+                                ps.PersonID = dt.Rows[i][0].ToString();
+                                ps.FullName = dt.Rows[i][1].ToString();
+                                ps.Address = dt.Rows[i][2].ToString();
+                                //add Obj  to context
+                                _context.Add(ps);
+                            }
+                            await _context.SaveChangesAsync();
+                            return RedirectToAction(nameof(Index));
+                        }
+                    }
+                }
+        }
 
         private bool PersonExists(string id)
         {
           return (_context.Person?.Any(e => e.PersonID == id)).GetValueOrDefault();
         }
+        
+
     }
 }
