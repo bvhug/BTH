@@ -1,5 +1,6 @@
 using System.Data;
 using OfficeOpenXml;
+using BVietHung.Models.Process;
 namespace BVietHung.Models.Process
 {
     public class ExcelProcess
